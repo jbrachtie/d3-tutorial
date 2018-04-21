@@ -1,8 +1,4 @@
 $(function() {
-    d3.select("body")
-        .transition()
-        .style("background-color", "black")
-        .duration(1000);
     /****************************/
     /******data sets & vars******/
     /****************************/
