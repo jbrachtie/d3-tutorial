@@ -44,11 +44,12 @@ $(function() {
     var scatterH = 300;
     var scatterPadding = 30;
 
+    d3.select("#dataset").append("p").text("dataset: [" + dataset + "]");
     /****************************/
     /**********circles***********/
     /****************************/
-    d3.select("body").append("p").text("circles:");
-    var svg = d3.select("body")
+    d3.select("#circles").append("p").text("circles:");
+    var svg = d3.select("#circles")
         .append("svg")
         .attr("width", w)
         .attr("height", h)
@@ -81,8 +82,8 @@ $(function() {
     /****************************/
     /*********bar chart**********/
     /****************************/
-    d3.select("body").append("p").text("bar chart:");
-    var barSVG = d3.select("body")
+    d3.select("#bar").append("p").text("bar chart:");
+    var barSVG = d3.select("#bar")
         .append("svg")
         .attr("width", barW)
         .attr("height", barH)
@@ -141,8 +142,8 @@ $(function() {
     /****************************/
     /********scatter plot********/
     /****************************/
-    d3.select("body").append("p").text("scatter plot:");
-    var scatter = d3.select("body")
+    d3.select("#scatter").append("p").text("scatter plot:");
+    var scatter = d3.select("#scatter")
         .append("svg")
         .attr("width", scatterW)
         .attr("height", scatterH)
